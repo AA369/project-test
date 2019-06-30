@@ -1,0 +1,586 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:100,200,300,400,500,600,700|Exo:100,200,300,400,500,600,700');
+
+/*--------------------------------------------Colors*/
+
+.ui-menu-color {
+    background-color: #C0C0C0;
+}
+
+/*--------------------------------------------Special Paddings/Margins/Text*/
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+    margin: 0;
+}
+
+ document.getElementById('testform').onsubmit= function(e){
+     e.preventDefault();
+}
+
+.uppercase {
+    text-transform: uppercase;
+}
+
+.general-sub {
+    font-family: "Exo", sans-serif;
+    font-weight: 300;
+    color: #fafafa;
+}
+
+.panel-text {
+    font-family: "Exo", sans-serif;
+    font-weight: 300;
+    color: #000000;
+}
+
+.general-font {
+    font-family: "Exo", sans-serif;
+    font-weight: 300;
+    font-size: 25px;
+}
+
+.inline-block {
+    padding-top: 15px;
+    display: inline-block;
+}
+
+.row-table {
+    display: table;
+}
+
+.section-heading {
+    font-family: "Exo", sans-serif;
+    font-weight: 300;
+    margin-top: 25px;
+    margin-bottom: 40px;
+}
+
+.callout-container {
+    text-align: center;
+    min-height: calc(100vh - 240px);
+}
+/*--------------------------------------------Heading*/
+
+header {
+    background-color: #C0C0C0;
+    color: #fafafa;
+    margin: 0;
+}
+
+.heading {
+    margin-left: 50px;
+}
+
+.logo {
+    padding: 5px;
+    margin: 0px auto;
+    background: url("../images/logo.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 120px;
+    transition: all .5s ease-in-out;
+    -moz-transition: all .5s ease-in-out;
+    -webkit-transition: all .5s ease-in-out;
+
+}
+
+#nav {
+    margin: 0;
+}
+
+#nav li {
+    padding: 0;
+}
+
+.menuitem {
+    height: 120px;
+    text-align: center;
+    padding: 0;
+}
+
+.menuitem a {
+    width: 100%;
+    text-decoration: none;
+    color: #ffffff;
+    height: 120px;
+}
+
+.menuitem a i {
+    padding-top: 35px;
+    display: block;
+    color: #fafafa;
+    font-size: 26px;
+}
+
+.menuitem span {
+    display: block;
+    width: 100%;
+    padding-top: 5px;  
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 14px;
+    font-weight: 300;
+    letter-spacing: 2px;
+}
+
+.alert-container {}
+
+/*---------About ---------*/
+
+.about {
+   text-align: justify;
+}
+div.video {
+    border-style: groove;
+    display: block;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+/*--------End About --------*/
+
+/* Schedule page */
+
+.col-1 img {
+    border: 3;
+    height:50px;
+    width:50px;
+}
+
+/* Promotion banner alert */
+
+.alert-container .col-xs-12 {
+    padding-left: 0;
+    padding-right: 0;
+}
+
+.alert-style  {
+    font-family: "Exo", sans-serif;
+    font-weight: 300;
+    color: white;
+    background-color: #000000;
+    margin-bottom: 0;
+    border: 1px solid transparent;
+    border-radius: 0;
+}
+
+.alert a {
+    color: #FFB6C1;
+    text-decoration: underline;
+}
+
+/* Containers */
+
+.container {
+    position: relative;
+    width: 100%;
+    max-width: 400px;
+      border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 20px;
+}
+
+.container img {
+    width: 100%;
+    height: auto;
+}
+
+.container .btnBook {
+    position: absolute;
+    top: 15%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    background-color: #f1f1f1;
+    color: black;
+    font-size: 16px;
+    padding: 16px 30px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.container .btnBook:hover {
+    background-color: black;
+    color: white;
+}
+
+/*----------------Contact page side Nav */
+
+.sidenav {
+    height: 100%;
+    width: 160px;
+    position: relative; 
+    z-index: 1;
+    top:150px;
+    left: 10px;
+    background-color: white;
+    font-size: 15px;
+    font-family: "Exo", sans-serif;
+    color:#C0C0C0;
+    overflow: hidden;
+    float: left;
+}
+
+/*--------------------------------------------Hover.css*/
+
+.hvr-sweep-to-bottom:before {
+    background: #C0C0C0; /*rgba(0, 0, 0, 0.2);*/
+    height: 120px;
+}
+/*------------Pricing page modal pop up box---------*/
+
+body {  
+    font-family: "Exo", sans-serif;
+    text-transform: uppercase;
+    color: #C0C0C0;
+}
+
+/* The Modal (background) */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 100px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content */
+.modal-content {
+    background-color: #fefefe;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+}
+
+/* The Close Button */
+.close {
+    color: #aaaaaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/*--------------------------------------------End pricing modal pop up box---*/
+
+/*--------------------------------------------Footer */
+footer {
+    background-color: #C0C0C0;
+    min-height: 120px;
+    margin: 0;
+}
+
+.timeout {
+    padding-top: 10px;
+    float: left;
+}
+
+.social {
+    padding-top: 10px;
+    text-align: center;
+    float: right;
+}
+
+.social-links {
+    color: #fafafa;
+    text-decoration: none;
+    padding-left: 15px;
+    text-align: center;
+}
+
+.social-links li a i {
+    width: 32px;
+    height: 32px;
+    padding: 12px 0;
+    border-radius: 50%;
+    font-size: 13px;
+    line-height: 7px;
+    text-align: center;
+    color: #fafafa;
+    background: #8f8f8f;
+    transition: all 0.35s ease-in-out;
+    -moz-transition: all 0.35s ease-in-out;
+    -webkit-transition: all 0.35s ease-in-out;
+    -o-transition: all 0.35s ease-in-out;
+}
+
+.social-links li a i:hover {
+     background: rgba(0, 0, 0, 0.2);
+}
+
+#footer-details {
+    margin: 20px;
+}
+
+.copyright-text p {
+    text-align: center;
+    margin: 0;
+    padding-top: 10px;
+    padding-bottom: 10px
+    font-size:5px;
+}
+
+/*------End Footer---------*/
+
+/* Pricing page styling */
+
+* {
+    box-sizing: border-box;
+}
+
+.columns {
+    float: left;
+    width: 33.3%;
+    padding: 8px;
+}
+
+.price {
+    list-style-type: none;
+    border: 1px solid #eee;
+    margin: 0;
+    padding: 0;
+    -webkit-transition: 0.3s;
+    transition: 0.3s;
+}
+
+.price:hover {
+    box-shadow: 0 8px 12px 0 rgba(0,0,0,0.2)
+}
+
+.price .header {
+    font-family: "Exo", sans-serif;
+    font-weight: 300;
+    background-color: #C0C0C0;
+    color: white;
+    font-size: 25px;
+}
+
+.price li {
+    font-family: "Exo", sans-serif;
+    font-weight: 300;
+    border-bottom: 1px solid #eee;
+    padding: 20px;
+    text-align: center;
+}
+
+.price .grey {
+    background-color: #C0C0C0;
+    font-size: 20px;
+}
+
+.button {
+    background-color: #000000;
+    border: none;
+    color: white;
+    padding: 10px 25px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+/*------- Sign up Button */
+
+/* The popup form - hidden by default */
+.form-popup {
+  display: none;
+  position: fixed;
+  bottom: 0;
+  right: 15px;
+  border: 3px solid #f1f1f1;
+  z-index: 9;
+}
+
+/* Add styles to the form container */
+.form-container {
+  max-width: 300px;
+  padding: 10px;
+  background-color: white;
+}
+
+/* Full-width input fields */
+.form-container input[type=text], .form-container input[type=password] {
+  width: 100%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  border: none;
+  background: #f1f1f1;
+}
+
+/* When the inputs get focus, do something */
+.form-container input[type=text]:focus, .form-container input[type=password]:focus {
+  background-color: #ddd;
+  outline: none;
+}
+
+/* Set a style for the submit/login button */
+.form-container .btn {
+  background-color: #000000;
+  color: white;
+  padding: 16px 20px;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  margin-bottom:10px;
+  opacity: 0.8;
+}
+
+/* Add a red background color to the cancel button */
+.form-container .cancel {
+  background-color: red;
+}
+
+/* Add some hover effects to buttons */
+.form-container .btn:hover, .open-button:hover {
+  opacity: 1;
+}
+
+/* Contact page styling - adapted from ucd-resume project*/
+
+/* styling for webpage header text */ 
+.page-heading {
+    font-family: "Exo", sans-serif;
+    font-weight: 300;
+    margin-top: 25px;
+    margin-bottom: 10px;
+    color:#C0C0C0;
+    display: block;
+    clear: both;
+}
+
+/* styling for contage */ 
+.input-heading {
+    font-family: "Exo", sans-serif;
+    font-weight: 300;
+    margin-top: 25px;
+    margin-bottom: 10px;
+    color:grey;
+    display: block;
+    clear: both;
+}
+
+.center-form {
+    padding-top: 10px;
+    margin: 0 auto;
+    max-width: 50%;
+}
+
+/* button hover on pricing page */
+.btn:hover {
+    background-color: black;
+    color: white;
+}
+/* End contact page */
+
+
+/*--------------------------------------------Contact*/
+
+.contact-heading {
+    font-family: "Exo", sans-serif;
+    font-weight: 300;
+    margin-top: 25px;
+    margin-bottom: 20px;
+}
+
+
+.center-form {
+    padding-top: 10px;
+    margin: 0 auto;
+    max-width: 70%;
+}
+
+/* buttons on pricing page */
+button[type="submit"] {
+    margin-top: 15px;
+    margin-bottom: 20px;
+    background-color: #000000;
+    color: #fafafa;
+}
+
+
+/* new contact styling for pop up */
+
+
+input[type=text], select, textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+}
+
+/* submit button on contact page */
+input[type=submit] {
+    background-color: #000000;
+    color: #fafafa;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+
+/* end new contact styling */
+
+ 
+/*--------------------------------------------Media Queries*/
+
+
+
+
+/* pricing page */
+
+@media only screen and (max-width: 600px) {
+    .columns {
+        width: 100%;
+    }
+    
+}
+
+/*look at testing this with below query for sidenav later - pricing page */
+@media(min-width: 992px) {
+    .section-column {
+        padding: 0 30px 30px;
+        float: none;
+        display: table-cell;
+    }
+    
+}
+   
+   /* contact page side info*/ 
+@media only screen and (max-width: 992px) {
+ 
+    .sidenav {
+        top: 20px;
+        width: 100%;
+        padding-bottom: 25px;
+    }
+}
+
+/* schedule page - hide column with image on mobile */
+@media (max-width: 600px) {
+   table tr>th:nth-of-type(1),   table tr>td:nth-of-type(1){
+    display: none;
+  }
+}

@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta chartset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        <title>codeYoga website</title>
+        
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" type="text/css" />
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" type="text/css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/hover.css/2.1.1/css/hover-min.css" type="text/css" />
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+        <link rel="stylesheet" href="assets/css/style.css" type="text/css"/>
+    </head>
+    <body>
+        <header class="container-fluid">
+           <div class="row">
+              <ul id="nav" class="list-inline clearfix ui-menu-color">
+                <a href="index.html">
+                    <li class="col-xs-4 col-sm-2 logo menuitem"></li>
+                </a>
+                    <li class="col-xs-4 col-sm-2 menuitem">
+                        <a href="index.html" class="hvr-sweep-to-bottom"><i class="fa fa-home" aria-hidden="true"></i><span>Home</span></a>
+                    </li>
+                    <li class="col-xs-4 col-sm-2 menuitem">
+                        <a href="about.html" class="hvr-sweep-to-bottom"><i class="fa fa-info-circle" aria-hidden="true"></i><span>About</span></a>
+                    </li>
+                    <li class="col-xs-4 col-sm-2 menuitem">
+                        <a href="schedule.html" class="hvr-sweep-to-bottom"><i class="fa fa-calendar" aria-hidden="true"></i><span>Schedule</span></a>
+                    </li>
+                    <li class="col-xs-4 col-sm-2 menuitem">
+                        <a href="pricing.html" class="hvr-sweep-to-bottom"><i class="fa fa-shopping-cart" aria-hidden="true"></i><span>Pricing</span></a>
+                    </li>
+                   <li class="col-xs-4 col-sm-2 menuitem">
+                        <a href="contacts.html" class="hvr-sweep-to-bottom"><i class="fa fa-envelope" aria-hidden="true"></i><span>Contact</span></a>
+                    </li>
+            </ul>
+        </div>
+        </header>
+<section class="container-fluid callout-container">
+    <h1 class="uppercase text-center page-heading">Pricing</h1>
+    <div class="columns">
+        <ul class="price">
+            <li class="header">Drop-In</li>
+            <li class="grey">&euro;11 / class</li>
+            <li>Bring your own mat</li>
+            <li>Book in advance</li>
+            <li 
+                 <span><button type="submit" class="btn btn-primary center-block general-font uppercase" onclick="openForm()">sign up</button></span>
+                    
+                    <div class="form-popup" id="myForm">
+                        <form action="/action_page.php" class="form-container">
+                            <h1>Login</h1>
+                    
+                            <label for="email"><b>Email</b></label>
+                            <input type="text" placeholder="Enter Email" name="email" required>
+                    
+                            <label for="psw"><b>Password</b></label>
+                            <input type="password" placeholder="Enter Password" name="psw" required>
+                    
+                            <button type="submit" class="btn">Login</button>
+                            <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
+                        </form>
+                    </div>
+                    
+                    <script>
+                        function openForm() {
+                            document.getElementById("myForm").style.display = "block";
+                        }
+                    
+                        function closeForm() {
+                            document.getElementById("myForm").style.display = "none";
+                        }
+                    </script>
+            </li>
+        </ul>
+    </div>
+    <div class="columns">
+        <ul class="price">
+            <li class="header">Monthly</li>
+            <li class="grey">&euro;89 / month</li>
+            <li>Mat included</li>
+            <li>No advance booking required</li>
+            <li 
+                 <span><button type="submit" class="btn btn-primary center-block general-font uppercase">Sign up</button>  </span>
+            </li>
+        </ul>
+    </div>
+    <div class="columns">
+         <ul class="price">
+            <li class="header">Promotion</li>
+            <li class="grey">&euro;60 / 10 classes</li>
+            <li>Bring your own mat</li>
+            <li>No advance booking required</li>
+            <li 
+                 <span><button type="submit" class="btn btn-primary center-block general-font uppercase">Sign up</button>  </span>
+            </li>
+        </ul>
+    </div>
+      </section>
+        <footer class="container-fluid">
+              <div class="row">
+                <div class="col-xs-12 col-sm-6 text-center uppercase general-sub timeout">Take a time out
+                    <div>
+                       <audio controls="controls" src="assets/audio/bells.mp3">
+                            Your browser does not support the audio element
+                        </audio>
+                    </div>
+                </div>
+                <div class="col-xs-12 col-sm-6 uppercase general-sub social">Social Media
+                    <ul class="list-inline social-links">
+                        <li><a target="_blank" href="https://www.facebook.com/CodeYoga-2206091706324212"><i class="fa fa-facebook"></i></a></li>
+                        <li><a target="_blank" href="https://twitter.com/codeyoga"><i class="fa fa-twitter"></i></a></li>
+                        <li><a target="_blank" href="https://www.linkedin.com"><i class="fa fa-linkedin"></i></a></li>
+                        <li><a target="_blank" href="https://www.pinterest.ie"><i class="fa fa-pinterest"></i></a></li>
+                        <li><a target="_blank" href="https://www.instagram.com"><i class="fa fa-instagram"></i></a></li>
+                        <li><a target="_blank" href="https://www.youtube.com/watch?v=NSAf7K7pyx8"><i class="fa fa-youtube"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+        </footer>
+    </body>
+</html>

@@ -1,0 +1,34 @@
+  Hi Chris, quick call to look over near-finalised project on https://ide.c9.io/amanda432/codeyoga. I've given you access. Couple of questions: should i use <main> on all pages instead of <section>. Is enough semantic HTML used in the code. What do you think of the responsiveness level. Are there enough comments throughout. Should I be used em instead of px. Should I put font Exo into it's own separate class and use that class throughout html. Thanks, Amanda
+  
+  
+  <section class="container-fluid callout-container">
+            <div class="row row-table">
+                <div class="col-xs-12 col-sm-12 col-md-2 section-column">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="sidenav contact-heading">
+                                        <p><i class="fa fa-phone"></i> 087 1010 101</p>
+                                        <p><i class="fa fa-envelope"></i> <a href="mailto:info@codeyoga.ie">info@codeyoga.ie</a></p>
+                                        <p><i class="fa fa-address-card"></i> 1010 Code Lane, County Dublin</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xs-12 col-sm-12 col-md-10 section-column">
+                    <div class="row">
+                       <h1 class="uppercase text-center page-heading">contact</h1>
+                        <div class="col-md-12">
+                           <div class="center-form">
+                            <form>
+                                <input type="text" name="name" class="form-control" id="fullname" placeholder="Name" required/>
+                                <input type="text" name="emailaddress" class="form-control" id="emailaddress" placeholder="Email" required/>
+                                <textarea rows="3" name="message" class="form-control" id="message" placeholder="Input message here" required></textarea>
+                                <button type="submit" class="btn btn-primary center-block general-font uppercase">Submit</button> 
+                            
+                            </form>
+                          </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+      </section>
